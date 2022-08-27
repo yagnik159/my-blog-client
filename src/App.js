@@ -21,12 +21,12 @@ function App() {
   <BrowserRouter>
     <TopBar/>
     <Routes>
-      <Route path="/" element={<Home/>}/>
-      <Route path="/register" element={user?<Home/>:<Register/>} />
-      <Route path="/login" element={user?<Home/>:<Login/>}/>
-      <Route path="/write" element={user?<Write/>:<Login/>}/>
-      <Route path="/setting" element={user?<Setting/>:<Login/>}/>
-      <Route path="/post/:postid" element={<Single/>}/>
+      <Route path="https://my-mern-blog-apps.herokuapp.com/" element={<Home/>}/>
+      <Route path="https://my-mern-blog-apps.herokuapp.com/register" element={user?<Home/>:<Register/>} />
+      <Route path="https://my-mern-blog-apps.herokuapp.com/login" element={user?<Home/>:<Login/>}/>
+      <Route path="https://my-mern-blog-apps.herokuapp.com/write" element={user?<Write/>:<Login/>}/>
+      <Route path="https://my-mern-blog-apps.herokuapp.com/setting" element={user?<Setting/>:<Login/>}/>
+      <Route path="https://my-mern-blog-apps.herokuapp.com/post/:postid" element={<Single/>}/>
     </Routes>
   </BrowserRouter>
   );
